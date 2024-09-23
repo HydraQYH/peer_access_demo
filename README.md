@@ -1,5 +1,5 @@
 # Cache Operator in Peer Memory Access
-Here is a code example that demonstrates peer memory access. The loadPeerMemory kernel performs two peer memory accesses. The first access uses the normal ld instruction and the data in the peer memory will be cached. In the second peer memory access, we use three instructions: ld, ld.volatile, and ld.cv respectively. We observe peer memory access through ncu.
+Here is a code example that demonstrates peer memory access. The loadPeerMemory kernel(cache_exp.cu:31) performs two peer memory accesses. The first access uses the normal ld instruction and the data in the peer memory will be cached. In the second peer memory access, we use three instructions: ld, ld.volatile, and ld.cv respectively. We observe peer memory access through ncu.
 
 ## ld
 Normal ld instructions will hit the cache.
